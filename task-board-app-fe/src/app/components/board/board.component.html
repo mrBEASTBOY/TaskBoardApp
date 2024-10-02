@@ -1,0 +1,105 @@
+<app-task-details></app-task-details>
+<div class="container p-8">
+  <div class="main-content">
+    <div class="flex-row g-4 mb-8">
+      <div>
+        <img src="./../../../assets/images/Logo.svg" alt="logo" />
+      </div>
+      <div>
+        <div class="flex-row g-2 align-item-center mb-4">
+          <h1 style="font-weight: 500">My Task Board</h1>
+          <img src="./../../../assets/images/Edit_duotone.svg" alt="edit-pen" />
+        </div>
+        <p>Tasks to keep organised</p>
+      </div>
+    </div>
+
+    <div class="flex-col g-6">
+      <!--Task Progress-->
+      <div
+        class="task-in-progress flex-row justify-content-space-between align-item-center task-tab-padding bg-yellow br-xl"
+      >
+        <div class="flex-row align-item-center g-4">
+          <p class="task-icon bg-white">
+            <img src="../../../assets/images/clock.png" alt="" />
+          </p>
+          <p class="text-bold">Task in Progress</p>
+        </div>
+        <img
+          src="./../../../assets/images/Time_atack_duotone.svg"
+          alt="time-attack"
+          class="task-icon bg-orange"
+        />
+      </div>
+
+      <!--Task Completed-->
+      <div
+        class="task-completed flex-row justify-content-space-between align-item-center task-tab-padding bg-green-light br-xl"
+      >
+        <div class="flex-row align-item-center g-4">
+          <p class="task-icon bg-white">
+            <img src="../../../assets/images/weightlifting.png" alt="" />
+          </p>
+          <p class="text-bold">Task Completed</p>
+        </div>
+        <div>
+          <img
+            src="./../../../assets/images/Done_round_duotone.svg"
+            alt="done"
+            class="task-icon bg-green-dark"
+          />
+        </div>
+      </div>
+
+      <!--Task Won't Do-->
+      <div
+        class="task-not-do flex-row justify-content-space-between align-item-center task-tab-padding bg-pink br-xl"
+      >
+        <div class="flex-row align-item-center g-4">
+          <p class="task-icon bg-white">
+            <img src="../../../assets/images/coffee.png" alt="" />
+          </p>
+          <p class="text-bold">Task Won’t Do</p>
+        </div>
+        <div>
+          <img
+            src="./../../../assets/images/close_ring_duotone.svg"
+            alt="done"
+            class="task-icon bg-red"
+          />
+        </div>
+      </div>
+
+      <!--Task To Do-->
+      <div
+        class="task-todo flex-row justify-content-space-between align-item-center task-tab-padding bg-gray br-xl"
+      >
+        <div class="flex-row g-4">
+          <p class="task-icon bg-white fit-content">
+            <img src="../../../assets/images/stack-of-books.png" alt="" />
+          </p>
+          <div>
+            <p class="text-bold mb-2">Task To Do</p>
+            <p class="mb-2">Something</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Add Task-->
+      <div
+        class="add-task flex-row justify-content-space-between align-item-center task-tab-padding bg-secondary-white br-xl"
+      >
+        <div class="flex-row g-4 align-item-center">
+          <img
+            src="./../../../assets/images/Add_round_duotone.svg"
+            alt="add"
+            class="task-icon bg-orange fit-content"
+          />
+          <div>
+            <p class="text-bold">Add new task</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

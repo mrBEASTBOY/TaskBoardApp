@@ -1,1 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-white: #f8fafc;
+  --secondary-white: #f5e8d5;
+  --third-white: #e3e8ef;
+  --primary-gray: #97a3b6;
+  --primary-black: #00000033;
+  --primary-blue: #3662e3;
+  --primary-yellow: #f5d565;
+  --primary-orange: #e9a23b;
+  --primary-light-green: #a0ecb1;
+  --primary-dark-green: #32d657;
+  --primary-pink: #f7d4d39d;
+  --primary-red: #dd524c;
+  --text-gray: #83868d;
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  display: grid;
+  background-color: var(--primary-white);
+  position: relative;
+  margin: 1rem;
+  background-color: gray;
+}
+
+input,
+textarea {
+  outline: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--text-gray);
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid var(--primary-blue);
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.g-6 {
+  gap: 1.5rem;
+}
+
+.g-4 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 0.5rem;
+}
+
+.g-1 {
+  gap: 0.25rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.task-tab-padding {
+  padding: 0.65rem 0.65rem;
+}
+
+.task-icon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.bg-yellow {
+  background-color: var(--primary-yellow);
+}
+
+.bg-white {
+  background-color: var(--primary-white);
+}
+
+.bg-orange {
+  background-color: var(--primary-orange);
+}
+
+.bg-green-light {
+  background-color: var(--primary-light-green);
+}
+
+.bg-green-dark {
+  background-color: var(--primary-dark-green);
+}
+
+.bg-pink {
+  background-color: var(--primary-pink);
+}
+
+.bg-red {
+  background-color: var(--primary-red);
+}
+
+.bg-gray {
+  background-color: var(--third-white);
+}
+
+.bg-secondary-white {
+  background-color: var(--secondary-white);
+}
+
+.br-xl {
+  border-radius: 0.75rem;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+.fit-content {
+  height: fit-content;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: var(--primary-yellow);
+}

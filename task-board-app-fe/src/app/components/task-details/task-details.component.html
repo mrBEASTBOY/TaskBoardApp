@@ -1,0 +1,107 @@
+<div class="details-container position-absolute bg-white width-100 p-4 br-xl">
+  <form>
+    <div class="flex-row justify-content-space-between mb-4">
+      <p class="text-bold">Task details</p>
+      <button>
+        <img
+          src="./../../../assets/images/close_ring_duotone-1.svg"
+          alt="close"
+        />
+      </button>
+    </div>
+
+    <div class="flex-col g-1 mb-4">
+      <label class="text-small text-gray">Task name</label>
+      <input type="text" name="name" placeholder="Enter Task Name" />
+    </div>
+
+    <div class="flex-col g-1 mb-4">
+      <label class="text-small text-gray">Description</label>
+      <textarea
+        name="description"
+        rows="10"
+        placeholder="Enter a short description"
+      ></textarea>
+    </div>
+
+    <div class="flex-col g-2 mb-4">
+      <label class="text-small text-gray">Icons</label>
+      <div>
+        <div class="flex-row g-1 align-item-center">
+          <button class="btn-icon">
+            <img src="./../../../assets/images/clock.png" alt="clock" />
+          </button>
+          <button class="btn-icon">
+            <img src="./../../../assets/images/messenger.png" alt="clock" />
+          </button>
+          <button class="btn-icon">
+            <img
+              src="./../../../assets/images/stack-of-books.png"
+              alt="clock"
+            />
+          </button>
+          <button class="btn-icon">
+            <img src="./../../../assets/images/weightlifting.png" alt="clock" />
+          </button>
+          <button class="btn-icon">
+            <img src="./../../../assets/images/friendship.png" alt="clock" />
+          </button>
+          <button class="btn-icon">
+            <img src="./../../../assets/images/clock.png" alt="clock" />
+          </button>
+        </div>
+
+        <input type="radio" id="self" name="icon" />
+        <input type="radio" id="chat" name="icon" />
+        <input type="radio" id="coffee" name="icon" />
+        <input type="radio" id="gym" name="icon" />
+        <input type="radio" id="book" name="icon" />
+        <input type="radio" id="clock" name="icon" />
+      </div>
+    </div>
+
+    <div class="flex-col g-2 mb-4">
+      <label class="text-small text-gray">Status</label>
+
+      <div>
+        <div class="grid-container">
+          <div class="flex-row g-4 align-item-center">
+            <img
+              src="./../../../assets/images/Add_round_duotone.svg"
+              alt="add"
+              class="task-icon bg-orange fit-content"
+            />
+            <div>
+              <p class="text-bold">Add new task</p>
+            </div>
+          </div>
+
+          <div class="flex-row g-4 align-item-center">
+            <img
+              src="./../../../assets/images/Done_round_duotone.svg"
+              alt="done"
+              class="task-icon bg-green-dark"
+            />
+            <div>
+              <p class="text-bold">Completed</p>
+            </div>
+          </div>
+
+          <div class="flex-row g-4 align-item-center">
+            <img
+              src="./../../../assets/images/close_ring_duotone.svg"
+              alt="done"
+              class="task-icon bg-red"
+            />
+            <div>
+              <p class="text-bold">Won't do</p>
+            </div>
+          </div>
+        </div>
+        <input type="radio" id="progress" name="status" />
+        <input type="radio" id="completed" name="status" />
+        <input type="radio" id="notdo" name="status" />
+      </div>
+    </div>
+  </form>
+</div>
