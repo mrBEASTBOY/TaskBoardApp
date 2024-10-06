@@ -1,4 +1,7 @@
-<app-task-details></app-task-details>
+<div class="c-container">
+  <app-task-details></app-task-details>
+</div>
+
 <div class="container p-8">
   <div class="main-content">
     <div class="flex-row g-4 mb-8">
@@ -17,7 +20,7 @@
     <div class="flex-col g-6">
       <!--Task Progress-->
       <div
-        class="task-in-progress flex-row justify-content-space-between align-item-center task-tab-padding bg-yellow br-xl"
+        class="pointer task-in-progress flex-row justify-content-space-between align-item-center task-tab-padding bg-yellow br-xl"
       >
         <div class="flex-row align-item-center g-4">
           <p class="task-icon bg-white">
@@ -34,7 +37,7 @@
 
       <!--Task Completed-->
       <div
-        class="task-completed flex-row justify-content-space-between align-item-center task-tab-padding bg-green-light br-xl"
+        class="pointer task-completed flex-row justify-content-space-between align-item-center task-tab-padding bg-green-light br-xl"
       >
         <div class="flex-row align-item-center g-4">
           <p class="task-icon bg-white">
@@ -53,7 +56,7 @@
 
       <!--Task Won't Do-->
       <div
-        class="task-not-do flex-row justify-content-space-between align-item-center task-tab-padding bg-pink br-xl"
+        class="pointer task-not-do flex-row justify-content-space-between align-item-center task-tab-padding bg-pink br-xl"
       >
         <div class="flex-row align-item-center g-4">
           <p class="task-icon bg-white">
@@ -72,7 +75,7 @@
 
       <!--Task To Do-->
       <div
-        class="task-todo flex-row justify-content-space-between align-item-center task-tab-padding bg-gray br-xl"
+        class="pointer task-todo flex-row justify-content-space-between align-item-center task-tab-padding bg-gray br-xl"
       >
         <div class="flex-row g-4">
           <p class="task-icon bg-white fit-content">
@@ -87,7 +90,8 @@
 
       <!--Add Task-->
       <div
-        class="add-task flex-row justify-content-space-between align-item-center task-tab-padding bg-secondary-white br-xl"
+        class="add-task flex-row justify-content-space-between align-item-center task-tab-padding bg-secondary-white br-xl pointer"
+        (click)="openDetails()"
       >
         <div class="flex-row g-4 align-item-center">
           <img

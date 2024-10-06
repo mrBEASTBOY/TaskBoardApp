@@ -1,8 +1,14 @@
-<div class="details-container position-absolute bg-white width-100 p-4 br-xl">
+<div
+  class="details-container position-absolute bg-white width-100 p-4 br-xl"
+  [ngClass]="{
+    'slide-open-board-amination': isOpen,
+    'slide-close-board-animation': !isOpen
+  }"
+>
   <form>
     <div class="flex-row justify-content-space-between mb-4">
       <p class="text-bold">Task details</p>
-      <button>
+      <button (click)="closeDetails()" type="button">
         <img
           src="./../../../assets/images/close_ring_duotone-1.svg"
           alt="close"

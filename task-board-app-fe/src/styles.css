@@ -29,8 +29,7 @@ body {
   display: grid;
   background-color: var(--primary-white);
   position: relative;
-  margin: 1rem;
-  background-color: gray;
+  overflow: hidden;
 }
 
 input,
@@ -50,6 +49,7 @@ textarea:focus {
 button {
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .mb-2 {
@@ -104,6 +104,11 @@ button {
   gap: 1rem;
 }
 
+.c-container {
+  margin: 1rem;
+  position: relative;
+}
+
 .align-item-center {
   align-items: center;
 }
@@ -127,6 +132,10 @@ button {
 
 .bg-white {
   background-color: var(--primary-white);
+}
+
+.bg-black {
+  background-color: var(--primary-black);
 }
 
 .bg-orange {
@@ -200,4 +209,94 @@ button {
 .btn-icon:hover,
 .btn-icon:focus {
   background-color: var(--primary-yellow);
+}
+
+.close-detail {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.slide-open-board-amination {
+  transform: translateY(-120%);
+  animation: slideFromTop 1s ease-out forwards;
+  display: block;
+}
+
+.slide-close-board-animation {
+  display: block;
+  animation: slideFromBottom 1s ease-out forwards;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(120%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-120%);
+    display: none;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(120%);
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .width-100 {
+    width: 700px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide-open-board-amination {
+    transform: translateX(120%);
+    animation: slideFromRight 1s ease-in-out forwards;
+  }
+
+  .slide-close-board-animation {
+    display: block;
+    animation: slideFromLeft 1s ease-out forwards;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .width-100 {
+    width: 600px;
+    right: 0;
+    top: 0;
+    left: auto;
+    transform: none;
+  }
 }
